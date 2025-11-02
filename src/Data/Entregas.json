@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "Endereco": "Rua A, 123",
+        "DataEntregaPrevista": "2024-06-20",
+        "idEntregador": 1,
+        "DataEntrega": null,
+        "Cliente": "Cliente XYZ"
+    }
+]

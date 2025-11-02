@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "numero": "NF123456",
+        "dataEmissao": "2024-06-15",
+        "idEntrega": 1,
+        "descricao": "Descrição do Produto A",
+        "preco": 10.0,
+        "quantidade": 100
+    },
+    {
+        "id": 2,
+        "numero": "NF654321",
+        "dataEmissao": "2024-06-16",
+        "idEntrega": 2,
+        "descricao": "Descrição do Produto B",
+        "preco": 20.0,
+        "quantidade": 50
+    }
+]
