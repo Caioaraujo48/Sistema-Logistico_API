@@ -32,24 +32,53 @@ Você deve ter instalado em sua máquina:
 
 * [Node.js](https://nodejs.org/) (versão LTS recomendada)
 
-## 🗺️ Endpoints da API
-
-Esta seção detalha todos os endpoints disponíveis na API, incluindo o método HTTP, o caminho da URL e uma breve descrição da sua funcionalidade.
-
-| Entidades | Endpoint | Métodos |
-| :---: | :--- | :--- |
-| `Usuarios` | `/usuarios` | Lista todos os usuários registrados. |
-| `Produtos` | `/produtos` | Cria um novo usuário. |
-| `NotasFicais` | `/notasFiscais` | Recupera os detalhes de um usuário específico. |
-| `Entregas` | `/entregas` | Atualiza todas as informações de um usuário. |
-| `Entregadores` | `/api/v1/usuarios/{id}` | Atualiza parcialmente um usuário. |
-| `Entregas` | `/api/v1/usuarios/{id}` | Remove um usuário específico. **(Requer autenticação)** |
-| `EntregasProduto` | `/api/v1/login` | Realiza o login e retorna um token de acesso. |
-
----
-
 ### Clonar o Repositório
 
 ```bash
 git clone [https://github.com/Caioaraujo48/Sistema-Logistico_API.git](https://github.com/Caioaraujo48/Sistema-Logistico_API.git)
 cd Sistema-Logistico_API
+
+
+## 🗺️ Endpoints da API
+
+Esta seção detalha todos os endpoints disponíveis na API, incluindo o método HTTP, o caminho da URL e uma breve descrição da sua funcionalidade.
+| Método HTTP | Rota (Endpoint) | Descrição |
+| :---: | :--- | :--- |
+| **--- ENTIDADE: USUÁRIOS ---** | | |
+| `GET` | `/usuarios` | Lista todos os usuários cadastrados. |
+| `GET` | `/usuarios/:id` | Recupera os detalhes de um usuário específico pelo ID. |
+| `POST` | `/usuarios` | Cria um novo usuário no sistema. |
+| `PUT` | `/usuarios` | Atualiza completamente as informações de um usuário existente. |
+| `DELETE` | `/usuarios` | Remove um usuário específico. |
+| **--- ENTIDADE: PRODUTOS ---** | | |
+| `GET` | `/produtos` | Lista todos os produtos disponíveis. |
+| `GET` | `/produtos/:id` | Recupera os detalhes de um produto específico pelo ID. |
+| `POST` | `/produtos` | Cria um novo produto. |
+| `PUT` | `/produtos` | Atualiza completamente as informações de um produto existente. |
+| `DELETE` | `/produtos` | Remove um produto específico. |
+| **--- ENTIDADE: NOTAS FISCAIS ---** | | |
+| `GET` | `/notasFiscais` | Lista todas as notas fiscais emitidas. |
+| `GET` | `/notasFiscais/:id` | Recupera os detalhes de uma nota fiscal específica pelo ID. |
+| `POST` | `/notasFiscais` | Emite uma nova nota fiscal. |
+| `PUT` | `/notasFiscais` | Atualiza completamente os dados de uma nota fiscal. |
+| `DELETE` | `/notasFiscais` | Cancela/Remove uma nota fiscal específica. |
+| **--- ENTIDADE: ENTREGAS ---** | | |
+| `GET` | `/entregas` | Lista todas as entregas registradas. |
+| `GET` | `/entregas/:id` | Recupera os detalhes de uma entrega específica pelo ID. |
+| `POST` | `/entregas` | Cria um novo registro de entrega. |
+| `PUT` | `/entregas` | Atualiza completamente o status ou dados de uma entrega. |
+| `DELETE` | `/entregas` | Cancela/Remove uma entrega. |
+| **--- ENTIDADE: ENTREGADORES ---** | | |
+| `GET` | `/entregadores` | Lista todos os entregadores disponíveis. |
+| `GET` | `/entregadores/:id` | Recupera os detalhes de um entregador específico pelo ID. |
+| `POST` | `/entregadores` | Cadastra um novo entregador. |
+| `PUT` | `/entregadores` | Atualiza completamente os dados cadastrais de um entregador. |
+| `DELETE` | `/entregadores` | Desativa/Remove um entregador. |
+| **--- ENTIDADE: ENTREGAS PRODUTO ---** | | |
+| `GET` | `/entregasProduto` | Lista todas as associações entre entregas e produtos. |
+| `GET` | `/entregasProduto/:id` | Recupera a associação específica (entrega-produto) pelo ID. |
+| `POST` | `/entregasProduto` | Cria uma nova associação entre uma entrega e um produto. |
+| `PUT` | `/entregasProduto` | Atualiza a associação entre entrega e produto (ex: quantidade). |
+| `DELETE` | `/entregasProduto` | Remove a associação entre entrega e produto. |
+
+---
