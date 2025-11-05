@@ -32,7 +32,23 @@ Você deve ter instalado em sua máquina:
 
 * [Node.js](https://nodejs.org/) (versão LTS recomendada)
 
-### 1. Clonar o Repositório
+## 🗺️ Endpoints da API
+
+Esta seção detalha todos os endpoints disponíveis na API, incluindo o método HTTP, o caminho da URL e uma breve descrição da sua funcionalidade.
+
+| Entidades | Endpoint | Métodos |
+| :---: | :--- | :--- |
+| `Usuarios` | `/usuarios` | Lista todos os usuários registrados. |
+| `Produtos` | `/produtos` | Cria um novo usuário. |
+| `NotasFicais` | `/notasFiscais` | Recupera os detalhes de um usuário específico. |
+| `Entregas` | `/entregas` | Atualiza todas as informações de um usuário. |
+| `Entregadores` | `/api/v1/usuarios/{id}` | Atualiza parcialmente um usuário. |
+| `Entregas` | `/api/v1/usuarios/{id}` | Remove um usuário específico. **(Requer autenticação)** |
+| `EntregasProduto` | `/api/v1/login` | Realiza o login e retorna um token de acesso. |
+
+---
+
+### Clonar o Repositório
 
 ```bash
 git clone [https://github.com/Caioaraujo48/Sistema-Logistico_API.git](https://github.com/Caioaraujo48/Sistema-Logistico_API.git)
