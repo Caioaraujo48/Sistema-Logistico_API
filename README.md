@@ -39,6 +39,11 @@ git clone [https://github.com/Caioaraujo48/Sistema-Logistico_API.git](https://gi
 cd Sistema-Logistico_API
 ```
 
+### Ligar o servidor
+
+```npm init server.js```
+
+use esse comando para ligar para conseguir testar as requisições da API
 
 ## 🗺️ Endpoints da API
 
