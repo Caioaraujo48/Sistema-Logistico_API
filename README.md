@@ -13,9 +13,6 @@ Uma API RESTful desenvolvida em Node.js com Express para gerenciar operações d
 | **Backend** | Node.js | Ambiente de execução JavaScript. |
 | **Framework** | Express | Framework web minimalista e flexível para construir a API. |
 | **Simulação DB** | **Arquivos JSON** | Usados para armazenar temporariamente os dados (`usuarios.json`, `cargas.json`). |
-| **Segurança** | `bcrypt` | Utilizado para hash de senhas de forma segura. |
-| **Produtividade** | `dotenv` | Gerenciamento de variáveis de ambiente. |
-| **Desenvolvimento**| `nodemon` | Reinicia o servidor automaticamente durante o desenvolvimento. |
 
 ## 📐 Arquitetura do Projeto (M-S-C)
 
