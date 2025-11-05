@@ -37,6 +37,7 @@ Você deve ter instalado em sua máquina:
 ```bash
 git clone [https://github.com/Caioaraujo48/Sistema-Logistico_API.git](https://github.com/Caioaraujo48/Sistema-Logistico_API.git)
 cd Sistema-Logistico_API
+```
 
 
 ## 🗺️ Endpoints da API
